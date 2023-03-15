@@ -1,0 +1,17 @@
+.form-searc{
+  width: 80%;
+}
+.nav-right i{
+  margin-right: 10px;
+  font-size: 18px;
+}
+.nav-right a{
+  text-decoration: none;
+  color: black;
+}
+.fa-bell{
+  color: rgb(255, 200, 0);
+}
+.form-control{
+  background-color: rgb(212, 211, 211);
+}
