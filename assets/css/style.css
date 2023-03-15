@@ -43,6 +43,7 @@ main{
   background-color: orangered;
   padding: 4px 3px;
   border-radius: 200px;
+  color: white;
 }
 .fa-pencil{
   margin-right: 10px;
