@@ -1,5 +1,12 @@
-.form-searc{
-  width: 80%;
+.viewport{
+  height: 100vh;
+}
+.navbar{
+  height: 60px;
+}
+.form-search{
+  flex-grow: 3;
+  margin-right: 10px;
 }
 .nav-right i{
   margin-right: 10px;
@@ -14,4 +21,40 @@
 }
 .form-control{
   background-color: rgb(212, 211, 211);
+}
+main{
+  height: calc(100% - 60px);
+}
+.container-main{
+  height: 100%;
+  width: 100%;
+}
+.side-bar{
+  height: 100%;
+  width: 150px;
+  background-color: blue;
+}
+.center-container{
+  height: 100%;
+  width: calc(100% - 150px);
+  background-color: green;
+}
+.fa-code{
+  background-color: orangered;
+  padding: 4px 3px;
+  border-radius: 200px;
+}
+.fa-pencil{
+  margin-right: 10px;
+}
+.fa-trash-can,
+.fa-pencil{
+  color: rgb(63, 63, 63);
+  border: 1px solid rgb(63, 63, 63);
+  border-radius: 5px;
+  padding: 5px 5px;
+}
+.fa-trash-can a,
+.fa-pencil a{
+  text-decoration: none;
 }
