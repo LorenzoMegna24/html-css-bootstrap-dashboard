@@ -17,18 +17,28 @@
         <nav class="navbar bg-body-tertiary">
           <div class="container-nav container-fluid d-flex justify-content-between align-items-center">
             <div>
-              <a class="navbar-brand" href="#"><img src="assets/img/logo.svg" alt=""></a>
+              <a class="navbar-brand d-none d-lg-inline" href="#"><img src="assets/img/logo.svg" alt=""></a>
+              <a class="d-inline-block d-lg-none" href="#"><img src="assets/img/mobile-logo.png" style="height: 50px;" alt=""></a>
             </div>
             <div class="form-search">
               <form role="search">
                 <input class="form-control" type="search" placeholder="&#128269; Search" aria-label="Search">
               </form>
             </div>
-            <div class="nav-right">
-              <a href="#"><i class="fa-solid fa-list-ul"></i></a>
-              <a href="#"><i class="fa-solid fa-circle-question"></i></a>
-              <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
-              <a href="#"><i class="fa-solid fa-bell"></i></a>
+            <div class="nav-right d-flex align-items-center">
+              <a href="#" class="d-none d-lg-inline"><i class="fa-solid fa-list-ul"></i></a>
+              <a href="#" class="d-none d-lg-inline"><i class="fa-solid fa-circle-question"></i></a>
+              <a href="#" class="d-none d-lg-inline"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+              <div class="dropdown">
+                <a href="#" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-bell"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><button class="dropdown-item" type="button">Action</button></li>
+                  <li><button class="dropdown-item" type="button">Another action</button></li>
+                  <li><button class="dropdown-item" type="button">Something else here</button></li>
+                </ul>
+              </div>
             </div>
           </div>
         </nav>
@@ -39,35 +49,156 @@
             <div class="up-sidebar d-flex flex-column mt-3 align-items-center">
               <a href="#">
                 <i class="fa-solid fa-house"></i>
-                <span>Home</span>
+                <span class="d-none d-lg-inline">Home</span>
               </a>               
               <a href="#">
                 <i class="fa-solid fa-chart-simple"></i>
-                <span>Stats</span>
+                <span class="d-none d-lg-inline">Stats</span>
               </a>               
               <a href="#">
                 <i class="fa-solid fa-signal"></i>
-                <span>Signal</span>
+                <span class="d-none d-lg-inline">Signal</span>
               </a>                
             </div>
             <div class="down-sidebar mb-3 d-flex justify-content-center">
               <a href="#">
                 <i class="fa-solid fa-gear"></i>
-                <span>Admin</span>
+                <span class="d-none d-lg-inline">Admin</span>
               </a>            
             </div>
           </div>
           <div class="center-container">
             <div class="container-fluid">
-              <div class="row">
-                <div class="col-4" style="border: solid 1px black; height: 40px;">
-
+              <div class="row center-top text-bg-primary p-3">
+                <div class="col-6 left-side-min-container">
+                  <div>
+                    <h2 class="d-inline">Boolean</h2>
+                    <span class="badge rounded-pill">Piano blaze</span>
+                  </div>
+                  <div>
+                    <span class="badge rounded-pill">3 app</span>
+                    <i class="fa-solid fa-angles-right"></i>
+                    <span class="badge rounded-pill d-none d-lg-inline">Boolean mobile app</span>
+                    <span class="badge rounded-pill d-none d-lg-inline">Boolean web app</span>
+                    <span class="badge rounded-pill d-none d-lg-inline">Boolean blog app</span>
+                    <span class="badge rounded-pill d-lg-none d-md-inline">+</span>
+                  </div>
                 </div>
-                <div class="col-4" style="border: solid 1px black; height: 40px;">
-
+                <div class="col-3 studenti d-flex flex-column">
+                  <span>Stuenti online negli ultimi 30 minuti</span>
+                  <span class="fs-2">125</span>
                 </div>
-                <div class="col-4" style="border: solid 1px black; height: 40px;">
-
+                <div class="col-3 d-flex justify-content-end">
+                  <div>
+                    <span>Nuovo studente</span>
+                    <button
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"
+                    class="btn btn-primary btn-outline-light"
+                  >
+                    <i class="fa-solid fa-plus"></i>
+                  </button>
+                  <div
+                    class="offcanvas offcanvas-end"
+                    tabindex="-1"
+                    id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel"
+                  >
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                        Inserisci nuovo studente
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div class="row">
+                        <div class="col">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="First name"
+                            aria-label="First name"
+                          />
+                        </div>
+                        <div class="col">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Last name"
+                            aria-label="Last name"
+                          />
+                        </div>
+                      </div>
+                      <form class="row mt-2 g-3">
+                        <div class="col-md-6">
+                          <label for="inputEmail4" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="inputEmail4" />
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputPassword4" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="inputPassword4" />
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputEmail4" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="inputEmail4" />
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputPassword4" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="inputPassword4" />
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress" class="form-label">Indirizzo</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="inputAddress"
+                            placeholder="1234 Main St"
+                          />
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputCity" class="form-label">City</label>
+                          <input type="text" class="form-control" id="inputCity" />
+                        </div>
+                        <div class="col-md-4">
+                          <label for="inputState" class="form-label">State</label>
+                          <select id="inputState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="col-md-2">
+                          <label for="inputZip" class="form-label">Zip</label>
+                          <input type="text" class="form-control" id="inputZip" />
+                        </div>
+                        <div class="mb-3">
+                          <label for="formFile" class="form-label"
+                            >Foto</label
+                          >
+                          <input class="form-control" type="file" id="formFile" />
+                        </div>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck" />
+                            <label class="form-check-label" for="gridCheck">
+                              Check me out
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary">Salva</button>
+                          <button type="button" class="btn btn-warning">Svuota</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  </div>
                 </div>
               </div>
               <div class="row">
@@ -81,8 +212,8 @@
                         <thead>
                           <tr>
                             <th scope="col">Nome</th>
-                            <th class="text-center" scope="col">Data inizio</th>
-                            <th class="text-center" scope="col">ROI</th>
+                            <th class="text-center d-none d-md-table-cell" scope="col">Data inizio</th>
+                            <th class="text-center d-none d-md-table-cell" scope="col">ROI</th>
                             <th class="text-center" scope="col">Stato</th>
                             <th class="text-center" scope="col">Azioni</th>
                           </tr>
@@ -90,8 +221,8 @@
                         <tbody>
                           <tr>
                             <td><i class="fa-solid fa-code"></i> Classe 75</td>
-                            <td class="text-center">15 Feb 2021</td>
-                            <td class="text-center">20%</td>
+                            <td class="text-center d-none d-md-table-cell">15 Feb 2021</td>
+                            <td class="text-center d-none d-md-table-cell">20%</td>
                             <td class="text-center"><span class="badge text-bg-success">Done</span></td>
                             <td class="text-center">
                               <a href=""><i class="fa-solid fa-pencil"></i></a>
@@ -100,8 +231,8 @@
                           </tr>
                           <tr>
                             <td scope="row"><i class="fa-solid fa-code"></i> Classe 76</td>
-                            <td class="text-center">16 Feb 2021</td>
-                            <td class="text-center">20%</td>
+                            <td class="text-center d-none d-md-table-cell">16 Feb 2021</td>
+                            <td class="text-center d-none d-md-table-cell">20%</td>
                             <td class="text-center"><span class="badge text-bg-success">Done</span></td>
                             <td class="text-center">
                               <a href=""><i class="fa-solid fa-pencil"></i></a>
@@ -110,8 +241,8 @@
                           </tr>
                           <tr>
                             <td scope="row"><i class="fa-solid fa-code"></i> Classe 77</td>
-                            <td class="text-center">17 Feb 2021</td>
-                            <td class="text-center">20%</td>
+                            <td class="text-center d-none d-md-table-cell">17 Feb 2021</td>
+                            <td class="text-center d-none d-md-table-cell">20%</td>
                             <td class="text-center"><span class="badge text-white text-bg-warning">Process</span></td>
                             <td class="text-center">
                             <a href=""><i class="fa-solid fa-pencil"></i></a>
@@ -120,8 +251,8 @@
                           </tr>
                           <tr>
                             <td scope="row"><i class="fa-solid fa-code"></i> Classe 78</td>
-                            <td class="text-center">18 Feb 2021</td>
-                            <td class="text-center">20%</td>
+                            <td class="text-center d-none d-md-table-cell">18 Feb 2021</td>
+                            <td class="text-center d-none d-md-table-cell">20%</td>
                             <td class="text-center"><span class="badge text-bg-success">Done</span></td>
                             <td class="text-center">
                               <a href=""><i class="fa-solid fa-pencil"></i></a>
@@ -130,8 +261,8 @@
                           </tr>
                           <tr>
                             <td scope="row"><i class="fa-solid fa-code"></i> Classe 79</td>
-                            <td class="text-center">19 Feb 2021</td>
-                            <td class="text-center">20%</td>
+                            <td class="text-center d-none d-md-table-cell">19 Feb 2021</td>
+                            <td class="text-center d-none d-md-table-cell">20%</td>
                             <td class="text-center"><span class="badge text-bg-danger">Failed</span></td>
                             <td class="text-center">
                               <a href=""><i class="fa-solid fa-pencil"></i></a>
@@ -140,8 +271,8 @@
                           </tr>
                           <tr>
                             <td scope="row"><i class="fa-solid fa-code"></i> Classe 80</td>
-                            <td class="text-center">20 Feb 2021</td>
-                            <td class="text-center">20%</td>
+                            <td class="text-center d-none d-md-table-cell">20 Feb 2021</td>
+                            <td class="text-center d-none d-md-table-cell">20%</td>
                             <td class="text-center"><span class="badge text-bg-success">Done</span></td>
                             <td class="text-center">
                               <a href=""><i class="fa-solid fa-pencil"></i></a>
@@ -150,8 +281,8 @@
                           </tr>
                           <tr>
                             <td scope="row"><i class="fa-solid fa-code"></i> Classe 81</td>
-                            <td class="text-center">21 Feb 2021</td>
-                            <td class="text-center">20%</td>
+                            <td class="text-center d-none d-md-table-cell">21 Feb 2021</td>
+                            <td class="text-center d-none d-md-table-cell">20%</td>
                             <td class="text-center"><span class="badge text-bg-danger">Failed</span></td>
                             <td class="text-center">
                               <a href=""><i class="fa-solid fa-pencil"></i></a>
@@ -160,8 +291,8 @@
                           </tr>
                           <tr>
                             <td scope="row"><i class="fa-solid fa-code"></i> Classe 82</td>
-                            <td class="text-center">22 Feb 2021</td>
-                            <td class="text-center">20%</td>
+                            <td class="text-center d-none d-md-table-cell">22 Feb 2021</td>
+                            <td class="text-center d-none d-md-table-cell">20%</td>
                             <td class="text-center"><span class="badge text-bg-success">Done</span></td>
                             <td class="text-center">
                               <a href=""><i class="fa-solid fa-pencil"></i></a>

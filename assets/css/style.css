@@ -18,6 +18,10 @@
 }
 .fa-bell{
   color: rgb(255, 200, 0);
+  margin-right: 0;
+}
+.nav-right .btn{
+  padding: 0;
 }
 .form-control{
   background-color: rgb(212, 211, 211);
@@ -39,10 +43,15 @@ main{
   text-decoration: none;
   color: white;
   margin-bottom:10px;
+  padding: 4px;
 }
 .down-sidebar a{
   text-decoration: none;
   color: white;
+  padding: 4px;
+}
+.side-bar a:hover{
+  background-color: rgba(255, 255, 255, 0.6);
 }
 .side-bar i{
   margin-right: 10px;
@@ -71,4 +80,27 @@ main{
 .fa-trash-can a,
 .fa-pencil a{
   text-decoration: none;
+}
+.left-side-min-container .badge{
+  background-color: #165bba;
+}
+.dropdown-toggle::after{
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .side-bar{
+    width: 60px;
+  }
+  .center-container{
+    width: calc(100% - 60px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .center-top{
+    flex-direction: column-reverse; 
+  }
+  .center-top>div{
+    margin-bottom: 20px;
+  }
 }
