@@ -87,6 +87,10 @@ main{
 .dropdown-toggle::after{
   display: none;
 }
+.offcanvas{
+  width: 50% !important;
+}
+
 
 @media screen and (max-width: 992px) {
   .side-bar{
@@ -103,4 +107,8 @@ main{
   .center-top>div{
     margin-bottom: 20px;
   }
+  .offcanvas{
+    width: 100% !important;
+  }
+  
 }
